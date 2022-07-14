@@ -4,13 +4,8 @@ describe('Data tables', () => {
             await browser.pause (2000);
         });
 
-        it('click on due first', async () => {
-            let element = await browser.$('#table1 > thead > tr').click();
-            await browser.pause (2000);
-        });
-
-        it('click on due second', async () => {
-            let element = await browser.$('#table1 > thead > tr').click();
+        it('DoubleClick on due', async () => {
+            let element = await browser.$('#table1 > thead > tr').doubleClick();
             await browser.pause (2000);
         });
         
